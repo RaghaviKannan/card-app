@@ -15,7 +15,6 @@ function Card(props) {
                   return <li className={item.isEnabled?"":"text-muted"}><FontAwesomeIcon icon={item.isEnabled?faCheck:faXmark}></FontAwesomeIcon>{` ${item.name}`}</li>
                 })
               }
-              <li className={props.card.features.monthlystatusval?"":"text-muted"}><span class="fa-li"><i class={props.card.features.monthlystatusval?"fas fa-check":"fas fa-times"}></i></span>{props.card.features.monthlystatus}</li>
             </ul>
           <div className="d-grid">
             <a href="#" className="btn btn-primary text-uppercase">Button</a>
