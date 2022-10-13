@@ -7,68 +7,119 @@ function App() {
     {
       pname: "Free",
       price: 0,
-      features:{
-        user: "Single User",
-        userval: true,
-        storage: "5GB Storage",
-        storageval: true,
-        project: "Unlimited Public Projects",
-        projectval: true,
-        access: "Community Access",
-        accessval: true,
-        privateprojects: "Unlimited Private Projects",
-        privateprojectsval :false,
-        phonesup: "Dedicated Phone Support",
-        phonesupval: false,
-        subdomain: "Free Subdomain",
-        subdomainval: false,
-        monthlystatus: "Monthly Status Reports",
-        monthlystatusval: false
-      }
+      features:[
+        {
+          name:"Single User",
+          isEnabled: true
+        },
+        {
+          name:"5GB Storage",
+          isEnabled: true
+        },
+        {
+          name:"Unlimited Public Projects",
+          isEnabled: true
+        },
+        {
+          name:"Community Access",
+          isEnabled: true
+        },
+        {
+          name:"Unlimited Private Projects",
+          isEnabled: false
+        },
+        {
+          name:"Dedicated Phone Support",
+          isEnabled: false
+        },
+        {
+          name:"Free Subdomain",
+          isEnabled: false
+        },
+        {
+          name:"Monthly Status Reports",
+          isEnabled: false
+        }
+      ]
     },
     {
       pname: "Plus",
       price: 9,
-      features:{
-        user: "5 Users",
-        userval: true,
-        storage: "50GB Storage",
-        storageval: true,
-        project: "Unlimited Public Projects",
-        projectval: true,
-        access: "Community Access",
-        accessval: true,
-        privateprojects: "Unlimited Private Projects",
-        privateprojectsval :true,
-        phonesup: "Dedicated Phone Support",
-        phonesupval: true,
-        subdomain: "Free Subdomain",
-        subdomainval: true,
-        monthlystatus: "Monthly Status Reports",
-        monthlystatusval: false
-      }
+      features:[
+        {
+          name:"5 Users",
+          isBold: true,
+          isEnabled:true
+        },
+        {
+          name:"50GB Storage",
+          isEnabled:true
+        },
+        {
+          name:"Unlimited Public Projects",
+          isEnabled: true
+        },
+        {
+          name:"Community Access",
+          isEnabled: true
+        },
+        {
+          name:"Unlimited Private Projects",
+          isEnabled: true
+        },
+        {
+          name:"Dedicated Phone Support",
+          isEnabled: true
+        },
+        {
+          name:"Free Subdomain",
+          isEnabled: true
+        },
+        {
+          name:"Monthly Status Reports",
+          isEnabled: false
+        }
+      ]
     },
     {
       pname: "Pro",
       price: 49,
-      features:{
-        user: "Unlimited Users",
-        userval: true,
-        storage: "150 GB Storage",
-        storageval: true,
-        project: "Unlimited Public Projects",
-        projectval: true,
-        access: "Community Access",
-        accessval: true,
-        privateprojects: "Unlimited Private Projects",
-        privateprojectsval :true,
-        phonesup: "Dedicated Phone Support",
-        phonesupval: true,
-        subdomain: "Unlimited Free Subdomains",
-        subdomainval: true,
-        monthlystatus: "Monthly Status Reports",
-        monthlystatusval: true
-      }
+      features:[
+        {
+          name:"Unlimited Users",
+          isBold: true,
+          isEnabled:true
+        },
+        {
+          name:"150GB Storage",
+          isEnabled:true
+        },
+        {
+          name:"Unlimited Public Projects",
+          isEnabled: true
+        },
+        {
+          name:"Community Access",
+          isEnabled: true
+        },
+        {
+          name:"Unlimited Private Projects",
+          isEnabled: true
+        },
+        {
+          name:"Dedicated Phone Support",
+          isEnabled: true
+        },
+        {
+          name:"Free Subdomain",
+          isEnabled: true
+        },
+        {
+          name:"Monthly Status Reports",
+          isEnabled: true
+        }
+
+      ]
     }
   ]
   return (
